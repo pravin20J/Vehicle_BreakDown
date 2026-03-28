@@ -11,7 +11,7 @@ model = joblib.load(model_path)
 # Streamlit UI for Machine Failure Prediction
 st.title("Engine Failure Prediction")
 st.write("""
-This application Predicts Engine Failure.
+This application Predicts Engine Failure Data.
 """)
 
 # User input

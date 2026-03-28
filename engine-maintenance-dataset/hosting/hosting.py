@@ -4,7 +4,7 @@ import os
 api = HfApi(token=os.getenv("HF_TOKEN"))
 api.upload_folder(
     folder_path="engine-maintenance-dataset/deployment",     # the local folder containing your files
-    repo_id="pravin1214/vehicle_break_down",          # the target repo
+    repo_id="pravin1214/VB12",          # the target repo
     repo_type="space",                      # dataset, model, or space
     path_in_repo="",                          # optional: subfolder path inside the repo
 )
