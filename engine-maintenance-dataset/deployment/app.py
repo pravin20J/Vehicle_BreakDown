@@ -16,11 +16,11 @@ This application Predicts Engine Failure Data.
 # User input
 
 engine_rpm = st.number_input("The number of revolutions per minute", min_value=60, max_value=2500, value=60)
-oil_pressure = st.number_input("The pressure of the lubricating oil", min_value=0.01, max_value=10.00, value=0.01,format="%.5f", step=0.00001)
-fuel_pressure = st.number_input("The pressure at which fuel is supplied", min_value=0.01, max_value=25.00, value=0.01,format="%.5f", step=0.00001)
-coolant_pressure = st.number_input("The pressure of the engine coolant", min_value=0.01, max_value=10.00, value=0.01,format="%.5f", step=0.00001)
-lub_oil_temp = st.number_input("The temperature of the lubricating oil", min_value=60.00, max_value=100.00, value=60.00,format="%.5f", step=0.00001)   
-coolant_temp = st.number_input("The temperature of the engine coolant", min_value=60.00, max_value=200.00, value=60.00,format="%.5f", step=0.00001)                             
+oil_pressure = st.number_input("The pressure of the lubricating oil", min_value=0.01, max_value=10.00, value=0.01,format="%.9f", step=0.000000001)
+fuel_pressure = st.number_input("The pressure at which fuel is supplied", min_value=0.01, max_value=25.00, value=0.01,format="%.9f", step=0.000000001)
+coolant_pressure = st.number_input("The pressure of the engine coolant", min_value=0.01, max_value=10.00, value=0.01,format="%.9f", step=0.000000001)
+lub_oil_temp = st.number_input("The temperature of the lubricating oil", min_value=60.00, max_value=100.00, value=60.00,format="%.9f", step=0.000000001)   
+coolant_temp = st.number_input("The temperature of the engine coolant", min_value=60.00, max_value=200.00, value=60.00,format="%.9f", step=0.000000001)                             
                                                        
 
 # Assemble input into DataFrame
