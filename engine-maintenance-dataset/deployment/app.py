@@ -34,9 +34,9 @@ input_data = pd.DataFrame([{
 }])
 
 
-if st.button("Predict Failure Result"):
+if st.button("Predict Engine Condition"):
     proba = model.predict_proba(input_data)[0][1]
     prediction = 1 if proba >= 0.45 else 0
-    result = "Failed" if prediction == 1 else "Not Failed"
+    result = "Faulty" if prediction == 1 else "Healthy"
     st.subheader("Prediction Result:")
     st.success(f"The model predicts: **{result}**")
