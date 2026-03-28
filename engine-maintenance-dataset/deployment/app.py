@@ -34,7 +34,7 @@ input_data = pd.DataFrame([{
 }])
 
 
-if st.button("Predict Customer"):
+if st.button("Predict Failure"):
     prediction = model.predict(input_data)[0]
     result = "Failed" if prediction == 1 else "Not Failed"
     st.subheader("Prediction Result:")
